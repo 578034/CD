@@ -38,7 +38,7 @@ public class Meny {
 				System.out.println("Skriv inn filnavn for eksisterende arkiv: ");
 				fil = sc.nextLine() + ".txt";
 				
-				cda = Fil.lesFraFil(fil);
+				
 				
 				lest = true;
 				break;
