@@ -1,5 +1,7 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.CD.Sjanger;
+
 public interface CDarkivADT {
     
 	CD[] hentCdTabell();

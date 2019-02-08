@@ -2,6 +2,8 @@ package no.hvl.dat102;
 
 import java.util.Scanner;
 
+import no.hvl.dat102.CD.Sjanger;
+
 public class Tekstgrensesnitt {
 
 public Object lesCD() {

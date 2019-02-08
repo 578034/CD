@@ -1,5 +1,7 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.CD.Sjanger;
+
 public class CDarkiv implements CDarkivADT {
       
 	private CD[] cdarkiv;
@@ -65,7 +67,7 @@ public class CDarkiv implements CDarkivADT {
 	public int antallSjanger(Sjanger sjanger) {
 		int sAnt = 0;
 		for (int i = 0; i < cdarkiv.length; i++)
-			if (cdarkiv[i].getsjanger() == sjanger)
+			if (cdarkiv[i].getSjanger() == sjanger)
 				sAnt++;
 		return sAnt;
 	}	

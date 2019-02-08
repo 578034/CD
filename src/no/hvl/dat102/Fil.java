@@ -1,5 +1,6 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.CD.Sjanger;
 import no.hvl.dat102.adt.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -66,7 +67,7 @@ public static void skrivTilFil(CDarkivADT cdarkiv, String filnavn) {
 				skriver.print(cd[i].getartist()); skriver.print(SKILLE);
 				skriver.print(cd[i].gettittel()); skriver.print(SKILLE);
 				skriver.print(cd[i].getlansering()); skriver.print(SKILLE);
-				skriver.print(cd[i].getsjanger()); skriver.print(SKILLE);
+				skriver.print(cd[i].getSjanger()); skriver.print(SKILLE);
 				skriver.print(cd[i].getplateselskap()); skriver.println();
 			}
 			fil.close();

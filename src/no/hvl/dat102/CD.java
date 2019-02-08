@@ -6,8 +6,10 @@ public class CD {
 	private String artist;
 	private String tittel;
 	private int lansering;
+	public enum Sjanger {POP, ROCK, OPERA, KLASSISK}
 	private Sjanger sjanger;
 	private String plateselskap;
+
 	
 	public CD() {	
 		this(0, "", "", 0, null, "");
@@ -27,7 +29,7 @@ public int getcdnr() {
 	return cdnr;
 }
 
-public void setCDnr(int cdnr) {
+public void setcdnr(int cdnr) {
 	this.cdnr = cdnr;
 }
 
@@ -55,11 +57,11 @@ public void setlansering(int lansering) {
 	this.lansering = lansering;
 }
 
-public Sjanger getsjanger() {
+public Sjanger getSjanger() {
 	return sjanger;
 }
 
-public void setsjanger(Sjanger sjanger) {
+public void setSjanger(Sjanger sjanger) {
 	this.sjanger = sjanger;
 }
 
@@ -69,6 +71,11 @@ public String getplateselskap() {
 
 public void setplateselskap(String plateselvskap) {
 	this.plateselskap = plateselvskap;
+}
+
+@Override
+public String toString() {
+	return cdnr + "#" + artist + "#" + tittel + "#" + lansering + "#" + sjanger + "#" + plateselskap;
 }
 
 }
